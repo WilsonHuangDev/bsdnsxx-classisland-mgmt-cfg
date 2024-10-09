@@ -7,7 +7,7 @@
     },
     "TimeLayoutSource": {
         "Value": "https://raw.githubusercontent.com/WilsonHuangDev/bsdfx-classisland-mgmt-cfg/main/timelayouts.json",
-        "Version": 1
+        "Version": 2
     },
     "SubjectsSource": {
         "Value": "https://raw.githubusercontent.com/WilsonHuangDev/bsdfx-classisland-mgmt-cfg/main/subjects.json",
