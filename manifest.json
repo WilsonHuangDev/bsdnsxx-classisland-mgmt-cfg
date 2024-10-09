@@ -19,6 +19,6 @@
     },
     "PolicySource": {
         "Value": "https://raw.githubusercontent.com/WilsonHuangDev/bsdfx-classisland-mgmt-cfg/main/policy.json",
-        "Version": 1
+        "Version": 2
     }
 }
