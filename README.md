@@ -1,1 +1,1 @@
-# bsdfx-classisland-mgmt-cfg
+# bsdnsxx-classisland-mgmt-cfg
