@@ -2,23 +2,23 @@
     "ServerKind": 0,
     "OrganizationName": "北京师范大学南山附属学校",
     "ClassPlanSource": {
-        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdfx-classisland-mgmt-cfg/main/{id}/classplans.json",
+        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/{id}/classplans.json",
         "Version": 1
     },
     "TimeLayoutSource": {
-        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdfx-classisland-mgmt-cfg/main/timelayouts.json",
+        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/timelayouts.json",
         "Version": 1
     },
     "SubjectsSource": {
-        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdfx-classisland-mgmt-cfg/main/subjects.json",
+        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/subjects.json",
         "Version": 1
     },
     "DefaultSettingsSource": {
-        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdfx-classisland-mgmt-cfg/main/settings.json",
+        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/settings.json",
         "Version": 1
     },
     "PolicySource": {
-        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdfx-classisland-mgmt-cfg/main/policy.json",
+        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/policy.json",
         "Version": 1
     }
 }
