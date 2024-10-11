@@ -6,8 +6,8 @@
         "Version": 1
     },
     "TimeLayoutSource": {
-        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/timelayouts.json",
-        "Version": 1
+        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/{id}/timelayouts.json",
+        "Version": 2
     },
     "SubjectsSource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/subjects.json",
