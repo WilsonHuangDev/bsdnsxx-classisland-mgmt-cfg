@@ -14,7 +14,7 @@
         "Version": 1
     },
     "DefaultSettingsSource": {
-        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/settings.json",
+        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/{id}/settings.json",
         "Version": 1
     },
     "PolicySource": {
