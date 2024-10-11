@@ -10,15 +10,15 @@
         "Version": 1
     },
     "SubjectsSource": {
-        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/subjects.json",
-        "Version": 1
+        "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/{id}/subjects.json",
+        "Version": 2
     },
     "DefaultSettingsSource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/{id}/settings.json",
-        "Version": 1
+        "Version": 2
     },
     "PolicySource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/policy.json",
-        "Version": 1
+        "Version": 2
     }
 }
