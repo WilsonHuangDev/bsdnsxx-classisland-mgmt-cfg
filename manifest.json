@@ -7,18 +7,18 @@
     },
     "TimeLayoutSource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/{id}/timelayouts.json",
-        "Version": 5
+        "Version": 6
     },
     "SubjectsSource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/subjects.json",
-        "Version": 5
+        "Version": 6
     },
     "DefaultSettingsSource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/{id}/settings.json",
-        "Version": 7
+        "Version": 8
     },
     "PolicySource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/policy.json",
-        "Version": 9
+        "Version": 10
     }
 }
