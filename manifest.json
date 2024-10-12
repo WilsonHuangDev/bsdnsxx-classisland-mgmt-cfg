@@ -19,6 +19,6 @@
     },
     "PolicySource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/policy.json",
-        "Version": 5
+        "Version": 6
     }
 }
