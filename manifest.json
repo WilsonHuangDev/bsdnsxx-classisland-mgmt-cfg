@@ -3,22 +3,22 @@
     "OrganizationName": "北京师范大学南山附属学校",
     "ClassPlanSource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/{id}/classplans.json",
-        "Version": 10
+        "Version": 11
     },
     "TimeLayoutSource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/{id}/timelayouts.json",
-        "Version": 10
+        "Version": 11
     },
     "SubjectsSource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/subjects.json",
-        "Version": 10
+        "Version": 11
     },
     "DefaultSettingsSource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/{id}/settings.json",
-        "Version": 10
+        "Version": 11
     },
     "PolicySource": {
         "Value": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/policy.json",
-        "Version": 10
+        "Version": 11
     }
 }
