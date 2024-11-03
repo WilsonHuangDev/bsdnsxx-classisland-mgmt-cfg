@@ -7,6 +7,7 @@
 1. 若发现任何错误/过时信息，请通过添加 `Issue` 使我知晓。当然，您也可以自行创建 `Pull Request` 修改。
 2. 欢迎添加内容/班级！请创建 `Pull Request` ，按照当前已有格式添加，我会在审核通过后合并至仓库。
 3. 对于 ClassIsland 软件本体的错误，应在正确途径报告，而不是在本仓库发起 `Issue` 。
+4. 对于 ClassIsland 软件本体的使用方法，请参阅[ClassIsland 文档](https://docs.classisland.tech/)。
 
 ## 仓库目录结构
 > 1 班级 ID 文件夹
