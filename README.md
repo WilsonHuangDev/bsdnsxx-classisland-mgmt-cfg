@@ -46,14 +46,14 @@
 >
 > > 2.1 软件工具包
 >
-> 3 manifest.json（集控清单）  
+> 3 manifest.json：集控清单  
 > 
-> 4 policy.json（集控策略文件）  
+> 4 policy.json：集控策略文件  
 > 
-> 5 settings.json（集控应用设置模板）  
+> 5 settings.json：集控应用设置模板  
 > 
-> 6 subjects.json（集控科目档案）  
+> 6 subjects.json：集控科目档案  
 > 
-> 7 README.md （本仓库说明文档）  
+> 7 README.md ：本仓库说明文档  
 > 
-> 8 LICENSE（本仓库开源许可证）  
+> 8 LICENSE：本仓库开源许可证  
