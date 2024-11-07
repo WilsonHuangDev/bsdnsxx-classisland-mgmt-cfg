@@ -1,6 +1,6 @@
 <div align="center">
 
-# <image src="Assets/AppLogo_AppLogo.svg" height="28"/> 北京师范大学南山附属学校 ClassIsland 集控仓库
+# <image src="Assets/AppLogo_AppLogo.svg" height="32"/> 北京师范大学南山附属学校 ClassIsland 集控仓库
 
 #### **bsdnsxx-classisland-mgmt-cfg**
 
