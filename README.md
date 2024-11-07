@@ -1,12 +1,12 @@
 <div align="center">
 
-# <image src="ClassIsland/Assets/AppLogo_AppLogo.svg" height="28"/> 北京师范大学南山附属学校 ClassIsland 集控仓库
+# <image src="Assets/AppLogo_AppLogo.svg" height="28"/> 北京师范大学南山附属学校 ClassIsland 集控仓库
 
-bsdnsxx-classisland-mgmt-cfg
+#### **bsdnsxx-classisland-mgmt-cfg**
 
 集控管理员QQ号：2068364343
 
-[![正式版 Release](https://img.shields.io/github/v/release/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg?style=flat-square&color=%233fb950&label=正式版)](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/releases/latest)
+[![Release](https://img.shields.io/github/v/release/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg?style=flat-round&color=%233fb950&label=Release)](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/releases/latest)
 
 </div>
 
