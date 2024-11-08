@@ -1,4 +1,4 @@
-name: 功能请求
+name: 新功能请求
 description: 提出一项新的功能。
 title: （将此栏【替换】为你的标题）
 labels: ["新功能", "待查看"]
@@ -36,7 +36,7 @@ body:
   - type: textarea
     id: req
     attributes:
-      label: 想要实现或优化的功能
+      label: 想要实现的功能
       description: 请详细描述一下您想要的功能，描述越具体，采纳的可能性越高。
     validations:
       required: true
