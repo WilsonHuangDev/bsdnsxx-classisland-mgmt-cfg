@@ -20,7 +20,7 @@ body:
       options:
         - label: 我已更新到最新版 [Release](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/releases/latest) ，确认我想要的功能还没有实现。
           required: true
-        - label: 我已在 [`Issues`](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/issues?q=label%3A新功能) 中检索，确认我想要的功能未被提交过。
+        - label: 我已在 [Issues](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/issues?q=label%3A新功能) 中检索，确认我想要的功能未被提交过。
           required: true
         - label: 该功能是与北京师范大学南山附属学校 ClassIsland 集控相关的，不是 ClassIsland 软件本体的新功能。
           required: true
@@ -46,5 +46,5 @@ body:
       label: 最后一步
       description: 回顾您的回答
       options:
-        - label: 我认为上述描述已经足够详细，以便开发人员理解您想要的功能。如果我的 `Issue` 没有按照上述要求填写，可能会被无条件关闭。
+        - label: 我认为上述描述已经足够详细，以便开发人员理解您想要的功能。如果我的 Issue 没有按照上述要求填写，可能会被无条件关闭。
           required: true
