@@ -1,0 +1,38 @@
+2024/11/6 23:17:46|Information|ClassIsland.App|ClassIsland 1.5.0.3-Griseo-af0cf67(HEAD) (Core 1.4.0.0)
+2024/11/6 23:17:46|Information|ClassIsland.Services.SettingsService|加载配置文件。
+2024/11/6 23:17:46|Information|ClassIsland.Services.SettingsService|写入配置文件：DiagnosticStartupCount
+2024/11/6 23:17:46|Information|ClassIsland.App|初始化应用。
+2024/11/6 23:17:46|Information|ClassIsland.Services.SettingsService|写入配置文件：UpdateArtifactHash
+2024/11/6 23:17:46|Information|ClassIsland.Services.AppUpdating.UpdateService|正在检查应用更新。GitHub
+2024/11/6 23:17:46|Information|ClassIsland.Services.ProfileService|加载档案中：./Profiles/Default.json
+2024/11/6 23:17:46|Information|ClassIsland.Services.WeatherService|获取天气信息： https://weatherapi.market.xiaomi.com/wtr-v3/weather/all?latitude=110&longitude=112&locationKey=weathercn%3A101280601&days=15&appKey=weather20151024&sign=zUFJoAR2ZVrDy1vF3D07&isGlobal=false&locale=zh_cn
+2024/11/6 23:17:46|Information|ClassIsland.Services.WallpaperPickingService|正在提取壁纸主题色。
+2024/11/6 23:17:46|Information|ClassIsland.Services.WallpaperPickingService|正在以兼容模式获取壁纸。
+2024/11/6 23:17:46|Information|ClassIsland.Services.NotificationHostService|注册提醒提供方：08f0d9c3-c770-4093-a3d0-02f3d90c24bc（上课提醒）
+2024/11/6 23:17:46|Information|ClassIsland.Services.NotificationHostService|获取提醒提供方设置：08f0d9c3-c770-4093-a3d0-02f3d90c24bc
+2024/11/6 23:17:47|Information|ClassIsland.Services.NotificationHostService|注册提醒提供方：8fbc3a26-6d20-44dd-b895-b9411e3ddc51（放学提醒）
+2024/11/6 23:17:47|Information|ClassIsland.Services.NotificationHostService|获取提醒提供方设置：8fbc3a26-6d20-44dd-b895-b9411e3ddc51
+2024/11/6 23:17:47|Information|ClassIsland.Services.NotificationHostService|注册提醒提供方：7625de96-38aa-4b71-b478-3f156dd9458d（天气预警）
+2024/11/6 23:17:47|Information|ClassIsland.Services.NotificationHostService|获取提醒提供方设置：7625de96-38aa-4b71-b478-3f156dd9458d
+2024/11/6 23:17:47|Information|ClassIsland.Services.PluginMarketService|正在加载插件源
+2024/11/6 23:17:47|Information|ClassIsland.Services.SettingsService|写入配置文件：OfficialIndexMirrors
+2024/11/6 23:17:47|Information|ClassIsland.App|正在初始化MainWindow。
+2024/11/6 23:17:47|Information|ClassIsland.Services.SpeechService.EdgeTtsService|初始化了EdgeTTS服务。
+2024/11/6 23:17:47|Information|ClassIsland.Services.ThemeService|设置主题：MaterialDesignThemes.Wpf.Theme
+2024/11/6 23:17:47|Information|ClassIsland.Services.SettingsService|写入配置文件：LastWeatherInfo
+2024/11/6 23:17:47|Information|ClassIsland.Services.SettingsService|写入配置文件：ClassIsland.MainWindow 的 SaveSettings()
+2024/11/6 23:17:48|Information|ClassIsland.Services.DiagnosticService|启动共花费 1768ms, [0, 2)
+2024/11/6 23:17:48|Information|ClassIsland.Services.SettingsService|写入配置文件：UpdateArtifactHash
+2024/11/6 23:17:48|Information|ClassIsland.Services.SettingsService|写入配置文件：ClassIsland.MainWindow 的 SaveSettings()
+2024/11/6 23:17:48|Information|ClassIsland.Services.SettingsService|写入配置文件：LastCheckUpdateInfoCacheGitHub
+2024/11/6 23:17:48|Information|ClassIsland.Services.SettingsService|写入配置文件：ClassIsland.MainWindow 的 SaveSettings()
+2024/11/6 23:17:48|Information|ClassIsland.Services.SettingsService|写入配置文件：LastCheckUpdateTime
+2024/11/6 23:17:48|Information|ClassIsland.Services.SettingsService|写入配置文件：ClassIsland.MainWindow 的 SaveSettings()
+2024/11/6 23:17:59|Information|ClassIsland.Services.SettingsService|写入配置文件：ClassIsland.Views.SettingsWindowNew关闭
+2024/11/6 23:18:05|Information|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024/11/6 23:18:05|Information|ClassIsland.Services.SettingsService|写入配置文件：停止当前应用程序。
+2024/11/6 23:18:05|Information|ClassIsland.Services.ProfileService|写入档案文件：./Profiles/Default.json
+2024/11/6 23:18:05|Information|ClassIsland.App|App stopping.
+2024/11/6 23:18:05|Information|ClassIsland.Services.SettingsService|写入配置文件：停止当前应用程序。
+2024/11/6 23:18:05|Information|ClassIsland.Services.ProfileService|写入档案文件：./Profiles/Default.json
+2024/11/6 23:18:05|Information|ClassIsland.Services.SettingsService|写入配置文件：ClassIsland.Views.SettingsWindowNew关闭
