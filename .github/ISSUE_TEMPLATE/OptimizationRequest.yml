@@ -1,6 +1,6 @@
 name: 功能优化请求
 description: 提出关于某功能的优化方案。
-title: （将此栏【替换】为你的标题）
+title: 在这里输入你的标题
 labels: ["优化", "待查看"]
 body:
   - type: markdown
