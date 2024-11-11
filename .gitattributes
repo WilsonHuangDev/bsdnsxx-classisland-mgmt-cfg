@@ -1,7 +1,12 @@
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
-* text=auto
+*               text=auto
+*.gitattributes text
+*.md            text diff=markdown
+*README*        text
+LICENSE         text
+*.json          text
 
 ###############################################################################
 # Set default behavior for command prompt diff.
@@ -11,9 +16,10 @@
 # Note: This is only used by command line
 ###############################################################################
 #*.cs     diff=csharp
-
-*.json linguist-language=JSON
-*.json.bak linguist-language=JSON
+*.json          linguist-language=JSON-with-Comments
+*.json.bak      linguist-language=JSON-with-Comments
+*.gitattributes linguist-language=gitattributes
+*.gitattributes linguist-detectable=true
 
 ###############################################################################
 # Set the merge driver for project and solution files
@@ -46,6 +52,29 @@
 #*.jpg   binary
 #*.png   binary
 #*.gif   binary
+*.ai            binary
+*.bmp           binary
+*.eps           binary
+*.gif           binary
+*.gifv          binary
+*.ico           binary
+*.jng           binary
+*.jp2           binary
+*.jpg           binary
+*.jpeg          binary
+*.jpx           binary
+*.jxr           binary
+*.pdf           binary
+*.png           binary
+*.psb           binary
+*.psd           binary
+*.svg           binary
+*.svgz          binary
+*.tif           binary
+*.tiff          binary
+*.wbmp          binary
+*.webp          binary
+*.exe           binary
 
 ###############################################################################
 # diff behavior for common document formats
