@@ -29,11 +29,7 @@
 > >
 > > > 1.3.1 Backups 文件夹：ClassIsland 备份目录  
 > > >
-> > > 1.3.2 Cache 文件夹：ClassIsland 提醒/插件缓存目录  
-> > >
 > > > 1.3.3 Config 文件夹：ClassIsland 组件/插件的配置文件目录  
-> > >
-> > > 1.3.4 Logs 文件夹：ClassIsland 运行日志目录  
 > > >
 > > > 1.3.5 Plugins 文件夹：ClassIsland 插件目录  
 > > >
