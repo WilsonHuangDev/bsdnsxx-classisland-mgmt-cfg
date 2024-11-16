@@ -7,6 +7,7 @@
 *.log.*
 
 # 忽略目录
+[Bb]ackup
 [Bb]ackups
 [Cc]ache
 [Ll]og
