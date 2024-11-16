@@ -1,7 +1,0 @@
-{
-    "ManagementServerKind": 0,
-    "ManagementServer": "",
-    "ManagementServerGrpc": "",
-    "ManifestUrlTemplate": "https://ghp.ci/https://raw.githubusercontent.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/main/manifest.json",
-    "ClassIdentity": "m2022-05"
-}
