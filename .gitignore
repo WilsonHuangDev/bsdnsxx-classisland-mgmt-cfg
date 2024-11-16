@@ -1,0 +1,14 @@
+### Git Ignore
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+*.log.*
+
+# 忽略目录
+[Bb]ackups
+[Cc]ache
+[Ll]og
+[Ll]ogs
+[Tt]emp
