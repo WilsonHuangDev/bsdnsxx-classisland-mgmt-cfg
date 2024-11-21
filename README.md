@@ -35,7 +35,7 @@
 > > 
 > > > 1.2.1 [defender-for-devops.yml](.github/workflows/defender-for-devops.yml): Microsoft Defender For Devops 工作流配置文件
 >
-> 2 [Assets](Assets)
+> 2 [Assets](Assets): ClassIsland 图片目录
 >
 > > 2.1 [AppLogo.ico](Assets/AppLogo.ico): ClassIsland Logo Icon
 > > 
@@ -62,40 +62,56 @@
 > > 3.3 [隐藏ClassIsland集控配置文件(x64文件夹).exe](Tools/隐藏ClassIsland集控配置文件(x64文件夹).exe): 隐藏存放在 C 盘 Program Files 文件夹下的 ClassIsland 集控配置文件
 > > 
 > > 3.4 [隐藏ClassIsland集控配置文件(x86文件夹).exe](Tools/隐藏ClassIsland集控配置文件(x86文件夹).exe): 隐藏存放在 C 盘 Program Files (x86) 文件夹下的 ClassIsland 集控配置文件
-> 
-> 4 班级 ID 文件夹: 各班配置文件和集控版 ClassIsland 软件目录
-> 
-> > 4.1 classplans.json: 各班集控课程表档案
+>
+> 4 [beta 文件夹](beta): 测试版集控配置文件和测试版 ClassIsland 软件目录(仅存在于 `beta` 分支中)
+>
+> > 4.1 [ClassIsland 文件夹](beta/ClassIsland): 测试版 ClassIsland 软件目录(测试版本来源于[ ClassIsland 仓库](https://github.com/ClassIsland/ClassIsland)的 `Pre-release` 预发布版本)
 > > 
-> > 4.2 timelayouts.json: 各班集控时间表档案
+> > > 4.1.1 [Config 文件夹](beta/ClassIsland/Config): 测试版 ClassIsland 组件/插件的配置文件目录
+> > >
+> > > 4.1.2 [Plugins 文件夹](beta/ClassIsland/Plugins): 测试版 ClassIsland 插件目录
+> > >
+> > > 4.1.3 [Profiles 文件夹](beta/ClassIsland/Profiles): 测试版 ClassIsland 课程表/时间表/科目档案目录
+> > >
+> > > 4.1.4 [ClassIsland.exe](beta/ClassIsland/ClassIsland.exe): 测试版 ClassIsland 软件本体
+> > >
+> > > 4.1.5 [ManagementPreset.json](beta/ClassIsland/ManagementPreset.json): 测试版 ClassIsland 客户端集控配置文件
+> > >
+> > > 4.1.6 [Settings.json](beta/ClassIsland/Settings.json): 测试版 ClassIsland 应用设置文件
+> 
+> 5 班级 ID 文件夹: 各班集控配置文件和集控版 ClassIsland 软件目录
+> 
+> > 5.1 classplans.json: 各班集控课程表档案
 > > 
-> > 4.3 ClassIsland 文件夹: 各班集控版 ClassIsland 软件目录
+> > 5.2 timelayouts.json: 各班集控时间表档案
+> > 
+> > 5.3 ClassIsland 文件夹: 各班集控版 ClassIsland 软件目录
 > >
-> > > 4.3.1 Config 文件夹: ClassIsland 组件/插件的配置文件目录
+> > > 5.3.1 Config 文件夹: ClassIsland 组件/插件的配置文件目录
 > > >
-> > > 4.3.2 Plugins 文件夹: ClassIsland 插件目录
+> > > 5.3.2 Plugins 文件夹: ClassIsland 插件目录
 > > >
-> > > 4.3.3 Profiles 文件夹: ClassIsland 课程表/时间表/科目档案目录
+> > > 5.3.3 Profiles 文件夹: ClassIsland 课程表/时间表/科目档案目录
 > > >
-> > > 4.3.4 ClassIsland.exe: ClassIsland 软件本体
+> > > 5.3.4 ClassIsland.exe: ClassIsland 软件本体
 > > >
-> > > 4.3.5 ManagementPreset.json: ClassIsland 客户端集控配置文件
+> > > 5.3.5 ManagementPreset.json: ClassIsland 客户端集控配置文件
 > > >
-> > > 4.3.6 Settings.json: ClassIsland 应用设置文件
+> > > 5.3.6 Settings.json: ClassIsland 应用设置文件
 >
-> 5 [.gitignore](.gitignore): Git Ignore 配置文件
+> 6 [.gitignore](.gitignore): Git Ignore 配置文件
 >
-> 6 [LICENSE](LICENSE): 本仓库开源许可证&版权
+> 7 [LICENSE](LICENSE): 本仓库开源许可证&版权
 >
-> 7 [README.md](README.md): 本仓库说明文档
+> 8 [README.md](README.md): 本仓库说明文档
 > 
-> 8 [manifest.json](manifest.json): 集控清单
+> 9 [manifest.json](manifest.json): 集控清单
 > 
-> 9 [policy.json](policy.json): 集控策略文件
+> 10 [policy.json](policy.json): 集控策略文件
 > 
-> 10 [settings.json](settings.json): 集控应用设置模板
+> 11 [settings.json](settings.json): 集控应用设置模板
 > 
-> 11 [subjects.json](subjects.json): 集控科目档案
+> 12 [subjects.json](subjects.json): 集控科目档案
 
 ## 许可证
 
