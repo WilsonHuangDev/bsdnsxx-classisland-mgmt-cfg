@@ -17,8 +17,8 @@ jobs:
 
     - name: Package m2022-01/ClassIsland folder
       run: |
-        cd m2022-01/ClassIsland
-        Compress-Archive -Path * -DestinationPath ../../ClassIsland-91.zip
+        cd m2022-01
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../../ClassIsland-91.zip
 
     - name: Upload ClassIsland-91.zip
       uses: actions/upload-artifact@v4
@@ -35,8 +35,8 @@ jobs:
 
     - name: Package m2022-05/ClassIsland folder
       run: |
-        cd m2022-05/ClassIsland
-        Compress-Archive -Path * -DestinationPath ../../ClassIsland-95.zip
+        cd m2022-05
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../../ClassIsland-95.zip
 
     - name: Upload ClassIsland-95.zip
       uses: actions/upload-artifact@v4
@@ -53,8 +53,8 @@ jobs:
       
     - name: Package m2022-06/ClassIsland folder
       run: |
-        cd m2022-06/ClassIsland
-        Compress-Archive -Path * -DestinationPath ../../ClassIsland-96.zip
+        cd m2022-06
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../../ClassIsland-96.zip
 
     - name: Upload ClassIsland-96.zip
       uses: actions/upload-artifact@v4
@@ -71,8 +71,8 @@ jobs:
       
     - name: Package m2022-08/ClassIsland folder
       run: |
-        cd m2022-08/ClassIsland
-        Compress-Archive -Path * -DestinationPath ../../ClassIsland-98.zip
+        cd m2022-08
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../../ClassIsland-98.zip
 
     - name: Upload ClassIsland-98.zip
       uses: actions/upload-artifact@v4
@@ -89,8 +89,8 @@ jobs:
       
     - name: Package m2023-05/ClassIsland folder
       run: |
-        cd m2023-05/ClassIsland
-        Compress-Archive -Path * -DestinationPath ../../ClassIsland-85.zip
+        cd m2023-05
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../../ClassIsland-85.zip
 
     - name: Upload ClassIsland-85.zip
       uses: actions/upload-artifact@v4
