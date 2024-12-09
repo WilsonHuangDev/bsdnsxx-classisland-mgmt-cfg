@@ -18,29 +18,53 @@ jobs:
     - name: Package m2022-01/ClassIsland folder
       run: zip -r ClassIsland-91.zip m2022-01/ClassIsland
 
+    - name: Upload ClassIsland-91.zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: ClassIsland-91
+        path: ClassIsland-91.zip
+
     - name: Package m2022-05/ClassIsland folder
       run: zip -r ClassIsland-95.zip m2022-05/ClassIsland
+
+    - name: Upload ClassIsland-95.zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: ClassIsland-95
+        path: ClassIsland-95.zip
 
     - name: Package m2022-06/ClassIsland folder
       run: zip -r ClassIsland-96.zip m2022-06/ClassIsland
 
+    - name: Upload ClassIsland-96.zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: ClassIsland-96
+        path: ClassIsland-96.zip
+
     - name: Package m2022-08/ClassIsland folder
       run: zip -r ClassIsland-98.zip m2022-08/ClassIsland
+
+    - name: Upload ClassIsland-98.zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: ClassIsland-98
+        path: ClassIsland-98.zip
 
     - name: Package m2023-05/ClassIsland folder
       run: zip -r ClassIsland-85.zip m2023-05/ClassIsland
 
+    - name: Upload ClassIsland-85.zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: ClassIsland-85
+        path: ClassIsland-85.zip
+
     - name: Package Tools folder
       run: zip -r Tools.zip Tools
 
-    - name: Upload packages
+    - name: Upload Tools.zip
       uses: actions/upload-artifact@v4
       with:
-        name: ClassIsland-packages
-        path: |
-          ClassIsland-91.zip
-          ClassIsland-95.zip
-          ClassIsland-96.zip
-          ClassIsland-98.zip
-          ClassIsland-85.zip
-          Tools.zip
+        name: Tools
+        path: Tools.zip
