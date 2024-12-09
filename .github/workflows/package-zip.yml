@@ -1,0 +1,46 @@
+name: Package ClassIsland Folders to Zip
+
+on:
+  workflow_dispatch:
+  
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Package:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Package m2022-01/ClassIsland folder
+      run: zip -r ClassIsland-91.zip m2022-01/ClassIsland
+
+    - name: Package m2022-05/ClassIsland folder
+      run: zip -r ClassIsland-95.zip m2022-05/ClassIsland
+
+    - name: Package m2022-06/ClassIsland folder
+      run: zip -r ClassIsland-96.zip m2022-06/ClassIsland
+
+    - name: Package m2022-08/ClassIsland folder
+      run: zip -r ClassIsland-98.zip m2022-08/ClassIsland
+
+    - name: Package m2023-05/ClassIsland folder
+      run: zip -r ClassIsland-85.zip m2023-05/ClassIsland
+
+    - name: Package Tools folder
+      run: zip -r Tools.zip Tools
+
+    - name: Upload packages
+      uses: actions/upload-artifact@v4
+      with:
+        name: ClassIsland-packages
+        path: |
+          ClassIsland-91.zip
+          ClassIsland-95.zip
+          ClassIsland-96.zip
+          ClassIsland-98.zip
+          ClassIsland-85.zip
+          Tools.zip
