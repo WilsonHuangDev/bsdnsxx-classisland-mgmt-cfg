@@ -1,4 +1,4 @@
-name: Package ClassIsland Folders to Zip
+name: Package ClassIsland Folders to Tar
 
 on:
   workflow_dispatch:
@@ -16,13 +16,13 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Package m2022-01/ClassIsland folder
-      run: zip -r ClassIsland-91.zip m2022-01/ClassIsland
+      run: tar -cvf ClassIsland-91.tar m2022-01/ClassIsland
 
-    - name: Upload ClassIsland-91.zip
+    - name: Upload ClassIsland-91.tar
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-91
-        path: ClassIsland-91.zip
+        path: ClassIsland-91.tar
         
   Package_m2022-05:
     runs-on: ubuntu-latest
@@ -32,13 +32,13 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Package m2022-05/ClassIsland folder
-      run: zip -r ClassIsland-95.zip m2022-05/ClassIsland
+      run: tar -cvf ClassIsland-95.tar m2022-05/ClassIsland
 
-    - name: Upload ClassIsland-95.zip
+    - name: Upload ClassIsland-95.tar
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-95
-        path: ClassIsland-95.zip
+        path: ClassIsland-95.tar
 
   Package_m2022-06:
     runs-on: ubuntu-latest
@@ -48,13 +48,13 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Package m2022-06/ClassIsland folder
-      run: zip -r ClassIsland-96.zip m2022-06/ClassIsland
+      run: tar -cvf ClassIsland-96.tar m2022-06/ClassIsland
 
-    - name: Upload ClassIsland-96.zip
+    - name: Upload ClassIsland-96.tar
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-96
-        path: ClassIsland-96.zip
+        path: ClassIsland-96.tar
 
   Package_m2022-08:
     runs-on: ubuntu-latest
@@ -64,13 +64,13 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Package m2022-08/ClassIsland folder
-      run: zip -r ClassIsland-98.zip m2022-08/ClassIsland
+      run: tar -cvf ClassIsland-98.tar m2022-08/ClassIsland
 
-    - name: Upload ClassIsland-98.zip
+    - name: Upload ClassIsland-98.tar
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-98
-        path: ClassIsland-98.zip
+        path: ClassIsland-98.tar
 
   Package_m2023-05:
     runs-on: ubuntu-latest
@@ -80,13 +80,13 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Package m2023-05/ClassIsland folder
-      run: zip -r ClassIsland-85.zip m2023-05/ClassIsland
+      run: tar -cvf ClassIsland-85.tar m2023-05/ClassIsland
 
-    - name: Upload ClassIsland-85.zip
+    - name: Upload ClassIsland-85.tar
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-85
-        path: ClassIsland-85.zip
+        path: ClassIsland-85.tar
 
   Package_Tools:
     runs-on: ubuntu-latest
@@ -96,10 +96,10 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Package Tools folder
-      run: zip -r Tools.zip Tools
+      run: tar -cvf Tools.tar Tools
 
-    - name: Upload Tools.zip
+    - name: Upload Tools.tar
       uses: actions/upload-artifact@v4
       with:
         name: Tools
-        path: Tools.zip
+        path: Tools.tar
