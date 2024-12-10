@@ -22,7 +22,8 @@ jobs:
         path: |
           m2022-01/
           !m2022-01/*.json
-        compression-level: 8
+        compression-level: 9
+        overwrite: true
         
   Package_m2022-05:
     runs-on: windows-latest
@@ -38,7 +39,8 @@ jobs:
         path: |
           m2022-05/
           !m2022-05/*.json
-        compression-level: 8
+        compression-level: 9
+        overwrite: true
 
   Package_m2022-06:
     runs-on: windows-latest
@@ -54,7 +56,8 @@ jobs:
         path: |
           m2022-06/
           !m2022-06/*.json
-        compression-level: 8
+        compression-level: 9
+        overwrite: true
 
   Package_m2022-08:
     runs-on: windows-latest
@@ -70,7 +73,8 @@ jobs:
         path: |
           m2022-08/
           !m2022-08/*.json
-        compression-level: 8
+        compression-level: 9
+        overwrite: true
 
   Package_m2023-05:
     runs-on: windows-latest
@@ -86,7 +90,8 @@ jobs:
         path: |
           m2023-05/
           !m2023-05/*.json
-        compression-level: 8
+        compression-level: 9
+        overwrite: true
 
   Package_Tools:
     runs-on: windows-latest
@@ -100,4 +105,5 @@ jobs:
       with:
         name: Tools
         path: Tools
-        compression-level: 8
+        compression-level: 9
+        overwrite: true
