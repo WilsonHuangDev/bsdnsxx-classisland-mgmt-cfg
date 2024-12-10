@@ -24,7 +24,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-91
-        path: ./ClassIsland-91.zip
+        path: './ClassIsland-91.zip'
         
   Package_m2022-05:
     runs-on: windows-latest
@@ -42,7 +42,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-95
-        path: ./ClassIsland-95.zip
+        path: './ClassIsland-95.zip'
 
   Package_m2022-06:
     runs-on: windows-latest
@@ -60,7 +60,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-96
-        path: ./ClassIsland-96.zip
+        path: './ClassIsland-96.zip'
 
   Package_m2022-08:
     runs-on: windows-latest
@@ -78,7 +78,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-98
-        path: ./ClassIsland-98.zip
+        path: './ClassIsland-98.zip'
 
   Package_m2023-05:
     runs-on: windows-latest
@@ -96,7 +96,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-85
-        path: ./ClassIsland-85.zip
+        path: './ClassIsland-85.zip'
 
   Package_Tools:
     runs-on: windows-latest
@@ -114,4 +114,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Tools
-        path: ./Tools.zip
+        path: './Tools.zip'
