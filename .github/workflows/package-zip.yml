@@ -15,16 +15,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Package m2022-01/ClassIsland folder
-      run: |
-        cd m2022-01
-        Compress-Archive -Path ./ClassIsland -DestinationPath ./
-
     - name: Upload ClassIsland-91.zip
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-91'
-        path: 'm2022-01/ClassIsland'
+        name: ClassIsland-91
+        path: |
+          m2022-01/
+          !m2022-01/*.json
         
   Package_m2022-05:
     runs-on: windows-latest
@@ -33,16 +30,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Package m2022-05/ClassIsland folder
-      run: |
-        cd m2022-05
-        Compress-Archive -Path ./ClassIsland -DestinationPath ./
-
     - name: Upload ClassIsland-95.zip
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-95'
-        path: 'm2022-05/ClassIsland'
+        name: ClassIsland-95
+        path: |
+          m2022-05/
+          !m2022-05/*.json
 
   Package_m2022-06:
     runs-on: windows-latest
@@ -50,17 +44,14 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      
-    - name: Package m2022-06/ClassIsland folder
-      run: |
-        cd m2022-06
-        Compress-Archive -Path ./ClassIsland -DestinationPath ./
 
     - name: Upload ClassIsland-96.zip
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-96'
-        path: 'm2022-06/ClassIsland'
+        name: ClassIsland-96
+        path: |
+          m2022-06/
+          !m2022-06/*.json
 
   Package_m2022-08:
     runs-on: windows-latest
@@ -69,16 +60,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       
-    - name: Package m2022-08/ClassIsland folder
-      run: |
-        cd m2022-08
-        Compress-Archive -Path ./ClassIsland -DestinationPath ./
-
     - name: Upload ClassIsland-98.zip
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-98'
-        path: 'm2022-08/ClassIsland'
+        name: ClassIsland-98
+        path: |
+          m2022-08/
+          !m2022-08/*.json
 
   Package_m2023-05:
     runs-on: windows-latest
@@ -86,17 +74,14 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      
-    - name: Package m2023-05/ClassIsland folder
-      run: |
-        cd m2023-05
-        Compress-Archive -Path ./ClassIsland -DestinationPath ./
 
     - name: Upload ClassIsland-85.zip
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-85'
-        path: 'm2023-05/ClassIsland'
+        name: ClassIsland-85
+        path: |
+          m2023-05/
+          !m2023-05/*.json
 
   Package_Tools:
     runs-on: windows-latest
@@ -104,14 +89,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      
-    - name: Package Tools folder
-      run: |
-        cd Tools
-        Compress-Archive -Path * -DestinationPath ./
 
     - name: Upload Tools.zip
       uses: actions/upload-artifact@v4
       with:
-        name: 'Tools'
-        path: 'Tools'
+        name: Tools
+        path: Tools
