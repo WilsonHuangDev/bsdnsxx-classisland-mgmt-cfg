@@ -23,8 +23,8 @@ jobs:
     - name: Upload ClassIsland-91.zip
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-91.zip'
-        path: './ClassIsland-91.zip'
+        name: 'ClassIsland-91'
+        path: 'm2022-01/ClassIsland'
         
   Package_m2022-05:
     runs-on: windows-latest
@@ -41,8 +41,8 @@ jobs:
     - name: Upload ClassIsland-95.zip
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-95.zip'
-        path: './ClassIsland-95.zip'
+        name: 'ClassIsland-95'
+        path: 'm2022-05/ClassIsland'
 
   Package_m2022-06:
     runs-on: windows-latest
@@ -59,8 +59,8 @@ jobs:
     - name: Upload ClassIsland-96.zip
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-96.zip'
-        path: './ClassIsland-96.zip'
+        name: 'ClassIsland-96'
+        path: 'm2022-06/ClassIsland'
 
   Package_m2022-08:
     runs-on: windows-latest
@@ -77,8 +77,8 @@ jobs:
     - name: Upload ClassIsland-98.zip
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-98.zip'
-        path: './ClassIsland-98.zip'
+        name: 'ClassIsland-98'
+        path: 'm2022-08/ClassIsland'
 
   Package_m2023-05:
     runs-on: windows-latest
@@ -95,8 +95,8 @@ jobs:
     - name: Upload ClassIsland-85.zip
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-85.zip'
-        path: './ClassIsland-85.zip'
+        name: 'ClassIsland-85'
+        path: 'm2023-05/ClassIsland'
 
   Package_Tools:
     runs-on: windows-latest
@@ -113,5 +113,5 @@ jobs:
     - name: Upload Tools.zip
       uses: actions/upload-artifact@v4
       with:
-        name: 'Tools.zip'
-        path: './Tools.zip'
+        name: 'Tools'
+        path: 'Tools'
