@@ -20,11 +20,15 @@ jobs:
         cd m2022-01
         Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-91.zip
 
+    - name: Move ClassIsland-91.zip to current directory
+      run: |
+        mv ../ClassIsland-91.zip .
+
     - name: Upload ClassIsland-91.zip
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-91
-        path: ../ClassIsland-91.zip  # Updated path to upload the correct file
+        path: ClassIsland-91.zip
         
   Package_m2022-05:
     runs-on: windows-latest
@@ -38,11 +42,15 @@ jobs:
         cd m2022-05
         Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-95.zip
 
+    - name: Move ClassIsland-95.zip to current directory
+      run: |
+        mv ../ClassIsland-95.zip .
+
     - name: Upload ClassIsland-95.zip
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-95
-        path: ../ClassIsland-95.zip  # Updated path to upload the correct file
+        path: ClassIsland-95.zip
 
   Package_m2022-06:
     runs-on: windows-latest
@@ -56,11 +64,15 @@ jobs:
         cd m2022-06
         Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-96.zip
 
+    - name: Move ClassIsland-96.zip to current directory
+      run: |
+        mv ../ClassIsland-96.zip .
+
     - name: Upload ClassIsland-96.zip
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-96
-        path: ../ClassIsland-96.zip  # Updated path to upload the correct file
+        path: ClassIsland-96.zip
 
   Package_m2022-08:
     runs-on: windows-latest
@@ -74,11 +86,15 @@ jobs:
         cd m2022-08
         Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-98.zip
 
+    - name: Move ClassIsland-98.zip to current directory
+      run: |
+        mv ../ClassIsland-98.zip .
+
     - name: Upload ClassIsland-98.zip
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-98
-        path: ../ClassIsland-98.zip  # Updated path to upload the correct file
+        path: ClassIsland-98.zip
 
   Package_m2023-05:
     runs-on: windows-latest
@@ -92,11 +108,15 @@ jobs:
         cd m2023-05
         Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-85.zip
 
+    - name: Move ClassIsland-85.zip to current directory
+      run: |
+        mv ../ClassIsland-85.zip .
+
     - name: Upload ClassIsland-85.zip
       uses: actions/upload-artifact@v4
       with:
         name: ClassIsland-85
-        path: ../ClassIsland-85.zip  # Updated path to upload the correct file
+        path: ClassIsland-85.zip
 
   Package_Tools:
     runs-on: windows-latest
@@ -110,8 +130,12 @@ jobs:
         cd Tools
         Compress-Archive -Path * -DestinationPath ../Tools.zip
 
+    - name: Move Tools.zip to current directory
+      run: |
+        mv ../Tools.zip .
+
     - name: Upload Tools.zip
       uses: actions/upload-artifact@v4
       with:
         name: Tools
-        path: ../Tools.zip  # Updated path to upload the correct file
+        path: Tools.zip
