@@ -87,12 +87,12 @@ jobs:
         uses: actions/download-artifact@v4.1.8
         with:
           name: |
-            ClassIsland-91
-            ClassIsland-95
-            ClassIsland-96
-            ClassIsland-98
-            ClassIsland-85
-            Tools
+            ClassIsland-91.zip
+            ClassIsland-95.zip
+            ClassIsland-96.zip
+            ClassIsland-98.zip
+            ClassIsland-85.zip
+            Tools.zip
           path: release
 
       - name: Print files from release dir
