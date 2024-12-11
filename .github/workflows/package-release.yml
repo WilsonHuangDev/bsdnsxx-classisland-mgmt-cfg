@@ -86,13 +86,37 @@ jobs:
       - name: Download a Build Artifact
         uses: actions/download-artifact@v4.1.8
         with:
-          name: |
-            ClassIsland-91.zip
-            ClassIsland-95.zip
-            ClassIsland-96.zip
-            ClassIsland-98.zip
-            ClassIsland-85.zip
-            Tools.zip
+          name: ClassIsland-91.zip
+          path: release
+
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ClassIsland-95.zip
+          path: release
+
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ClassIsland-96.zip
+          path: release
+
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ClassIsland-98.zip
+          path: release
+
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ClassIsland-85.zip
+          path: release
+
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: Tools.zip
           path: release
 
       - name: Print files from release dir
