@@ -86,47 +86,47 @@ jobs:
       - name: Make release dir
         run: mkdir release
 
-      - name: Download a Build Artifact
+      - name: Download Build Artifact ClassIsland-91
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ClassIsland-91.zip
+          name: ClassIsland-91
           path: release
 
-      - name: Download a Build Artifact
+      - name: Download Build Artifact ClassIsland-95
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ClassIsland-95.zip
+          name: ClassIsland-95
           path: release
 
-      - name: Download a Build Artifact
+      - name: Download Build Artifact ClassIsland-96
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ClassIsland-96.zip
+          name: ClassIsland-96
           path: release
 
-      - name: Download a Build Artifact
+      - name: Download Build Artifact ClassIsland-98
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ClassIsland-98.zip
+          name: ClassIsland-98
           path: release
 
-      - name: Download a Build Artifact
+      - name: Download Build Artifact ClassIsland-85
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ClassIsland-85.zip
+          name: ClassIsland-85
           path: release
 
-      - name: Download a Build Artifact
+      - name: Download Build Artifact Tools
         uses: actions/download-artifact@v4.1.8
         with:
-          name: Tools.zip
+          name: Tools
           path: release
 
       - name: Print files from release dir
         run: |
           ls -lah release
 
-      - name: Create a draft release
+      - name: Create a Draft Release
         uses: wangliang181230/github-action-ghr@master
         env:
           GITHUB_TOKEN: ${{ github.token }}
