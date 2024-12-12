@@ -15,64 +15,72 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Package m2022-01/ClassIsland folder
+      run: |
+        cd m2022-01
+        Compress-Archive -Path ./ClassIsland -DestinationPath ./
+
     - name: Upload ClassIsland-91.zip
       uses: actions/upload-artifact@v4
       with:
-        name: ClassIsland-91
-        path: |
-          m2022-01/
-          !m2022-01/*.json
-        compression-level: 9
-        overwrite: true
+        name: 'ClassIsland-91'
+        path: 'm2022-01/ClassIsland'
+
+    - name: Package m2022-05/ClassIsland folder
+      run: |
+        cd m2022-05
+        Compress-Archive -Path ./ClassIsland -DestinationPath ./
 
     - name: Upload ClassIsland-95.zip
       uses: actions/upload-artifact@v4
       with:
-        name: ClassIsland-95
-        path: |
-          m2022-05/
-          !m2022-05/*.json
-        compression-level: 9
-        overwrite: true
+        name: 'ClassIsland-95'
+        path: 'm2022-05/ClassIsland'
+
+    - name: Package m2022-06/ClassIsland folder
+      run: |
+        cd m2022-06
+        Compress-Archive -Path ./ClassIsland -DestinationPath ./
 
     - name: Upload ClassIsland-96.zip
       uses: actions/upload-artifact@v4
       with:
-        name: ClassIsland-96
-        path: |
-          m2022-06/
-          !m2022-06/*.json
-        compression-level: 9
-        overwrite: true
+        name: 'ClassIsland-96'
+        path: 'm2022-06/ClassIsland'
+      
+    - name: Package m2022-08/ClassIsland folder
+      run: |
+        cd m2022-08
+        Compress-Archive -Path ./ClassIsland -DestinationPath ./
 
     - name: Upload ClassIsland-98.zip
       uses: actions/upload-artifact@v4
       with:
-        name: ClassIsland-98
-        path: |
-          m2022-08/
-          !m2022-08/*.json
-        compression-level: 9
-        overwrite: true
+        name: 'ClassIsland-98'
+        path: 'm2022-08/ClassIsland'
+
+    - name: Package m2023-05/ClassIsland folder
+      run: |
+        cd m2023-05
+        Compress-Archive -Path ./ClassIsland -DestinationPath ./
 
     - name: Upload ClassIsland-85.zip
       uses: actions/upload-artifact@v4
       with:
-        name: ClassIsland-85
-        path: |
-          m2023-05/
-          !m2023-05/*.json
-        compression-level: 9
-        overwrite: true
+        name: 'ClassIsland-85'
+        path: 'm2023-05/ClassIsland'
+
+    - name: Package Tools folder
+      run: |
+        cd Tools
+        Compress-Archive -Path * -DestinationPath ./
 
     - name: Upload Tools.zip
       uses: actions/upload-artifact@v4
       with:
-        name: Tools
-        path: Tools
-        compression-level: 9
-        overwrite: true
-
+        name: 'Tools'
+        path: 'Tools'
+        
   Release:
     runs-on: ubuntu-latest
     
@@ -134,4 +142,3 @@ jobs:
           GHR_TITLE: ${{ github.ref_name }}
           GHR_REPLACE: true
           GHR_DRAFT: true
-          
