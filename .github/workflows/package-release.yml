@@ -24,7 +24,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: 'ClassIsland-91'
-        path: 'm2022-01/ClassIsland'
+        path: './ClassIsland-91.zip'
 
     - name: Package m2022-05/ClassIsland folder
       run: |
@@ -35,7 +35,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: 'ClassIsland-95'
-        path: 'm2022-05/ClassIsland'
+        path: './ClassIsland-95.zip'
 
     - name: Package m2022-06/ClassIsland folder
       run: |
@@ -46,7 +46,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: 'ClassIsland-96'
-        path: 'm2022-06/ClassIsland'
+        path: './ClassIsland-96.zip'
       
     - name: Package m2022-08/ClassIsland folder
       run: |
@@ -57,7 +57,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: 'ClassIsland-98'
-        path: 'm2022-08/ClassIsland'
+        path: './ClassIsland-98.zip'
 
     - name: Package m2023-05/ClassIsland folder
       run: |
@@ -68,7 +68,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: 'ClassIsland-85'
-        path: 'm2023-05/ClassIsland'
+        path: './ClassIsland-85.zip'
 
     - name: Package Tools folder
       run: |
@@ -79,7 +79,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: 'Tools'
-        path: 'Tools'
+        path: './Tools.zip'
         
   Release:
     runs-on: ubuntu-latest
