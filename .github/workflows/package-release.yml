@@ -1,0 +1,165 @@
+name: Package and Release
+
+on:
+  workflow_dispatch:
+  
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Package:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Package m2022-01/ClassIsland folder
+      run: |
+        cd m2022-01
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-91.zip
+
+    - name: Upload ClassIsland-91.zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: 'ClassIsland-91'
+        path: 'ClassIsland-91.zip'
+
+    - name: Package m2022-05/ClassIsland folder
+      run: |
+        cd m2022-05
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-95.zip
+
+    - name: Upload ClassIsland-95.zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: 'ClassIsland-95'
+        path: 'ClassIsland-95.zip'
+
+    - name: Package m2022-06/ClassIsland folder
+      run: |
+        cd m2022-06
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-96.zip
+
+    - name: Upload ClassIsland-96.zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: 'ClassIsland-96'
+        path: 'ClassIsland-96.zip'
+      
+    - name: Package m2022-08/ClassIsland folder
+      run: |
+        cd m2022-08
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-98.zip
+
+    - name: Upload ClassIsland-98.zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: 'ClassIsland-98'
+        path: 'ClassIsland-98.zip'
+
+    - name: Package m2023-05/ClassIsland folder
+      run: |
+        cd m2023-05
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-85.zip
+
+    - name: Upload ClassIsland-85.zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: 'ClassIsland-85'
+        path: 'ClassIsland-85.zip'
+
+    - name: Package Tools folder
+      run: |
+        cd Tools
+        Compress-Archive -Path * -DestinationPath ../Tools.zip
+
+    - name: Upload Tools.zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: 'Tools'
+        path: 'Tools.zip'
+
+    - name: Calculate checksums
+      run: |
+        Get-FileHash -Path ClassIsland-91.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FileName checksums.sha256
+        Get-FileHash -Path ClassIsland-95.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FileName checksums.sha256
+        Get-FileHash -Path ClassIsland-96.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FileName checksums.sha256
+        Get-FileHash -Path ClassIsland-98.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FileName checksums.sha256
+        Get-FileHash -Path ClassIsland-85.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FileName checksums.sha256
+        Get-FileHash -Path Tools.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FileName checksums.sha256
+
+    - name: Upload checksums.sha256
+      uses: actions/upload-artifact@v4
+      with:
+        name: 'checksums'
+        path: 'checksums.sha256'
+        
+  Release:
+    runs-on: ubuntu-latest
+    
+    needs:
+      - Package
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Make release dir
+        run: mkdir release
+
+      - name: Download Build Artifact ClassIsland-91
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ClassIsland-91
+          path: release
+
+      - name: Download Build Artifact ClassIsland-95
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ClassIsland-95
+          path: release
+
+      - name: Download Build Artifact ClassIsland-96
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ClassIsland-96
+          path: release
+
+      - name: Download Build Artifact ClassIsland-98
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ClassIsland-98
+          path: release
+
+      - name: Download Build Artifact ClassIsland-85
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ClassIsland-85
+          path: release
+
+      - name: Download Build Artifact Tools
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: Tools
+          path: release
+
+      - name: Download Build Artifact checksums
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: checksums
+          path: release
+
+      - name: Print files from release dir
+        run: |
+          ls -lah release
+
+      - name: Create a Draft Release
+        uses: wangliang181230/github-action-ghr@master
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GHR_PATH: release/
+          GHR_TITLE: ${{ github.ref_name }}
+          GHR_REPLACE: true
+          GHR_DRAFT: true
