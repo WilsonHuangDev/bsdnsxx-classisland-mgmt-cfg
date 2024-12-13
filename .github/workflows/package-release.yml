@@ -83,12 +83,12 @@ jobs:
 
     - name: Calculate checksums
       run: |
-        Get-FileHash -Path ClassIsland-91.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FilePath checksums.sha256
-        Get-FileHash -Path ClassIsland-95.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FilePath checksums.sha256
-        Get-FileHash -Path ClassIsland-96.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FilePath checksums.sha256
-        Get-FileHash -Path ClassIsland-98.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FilePath checksums.sha256
-        Get-FileHash -Path ClassIsland-85.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FilePath checksums.sha256
-        Get-FileHash -Path Tools.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FilePath checksums.sha256
+        Get-FileHash -Path ClassIsland-91.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FileName checksums.sha256
+        Get-FileHash -Path ClassIsland-95.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FileName checksums.sha256
+        Get-FileHash -Path ClassIsland-96.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FileName checksums.sha256
+        Get-FileHash -Path ClassIsland-98.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FileName checksums.sha256
+        Get-FileHash -Path ClassIsland-85.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FileName checksums.sha256
+        Get-FileHash -Path Tools.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FileName checksums.sha256
 
     - name: Upload checksums.sha256
       uses: actions/upload-artifact@v4
