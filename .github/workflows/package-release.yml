@@ -80,21 +80,6 @@ jobs:
       with:
         name: 'Tools'
         path: 'Tools.zip'
-
-    # - name: Calculate checksums
-      # run: pwsh .github/workflows/generate-sha256.ps1 ../
-        # Get-FileHash -Path ClassIsland-91.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FilePath checksums.sha256
-        # Get-FileHash -Path ClassIsland-95.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FilePath checksums.sha256
-        # Get-FileHash -Path ClassIsland-96.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FilePath checksums.sha256
-        # Get-FileHash -Path ClassIsland-98.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FilePath checksums.sha256
-        # Get-FileHash -Path ClassIsland-85.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FilePath checksums.sha256
-        # Get-FileHash -Path Tools.zip -Algorithm SHA256 | Format-Table -HideTableHeaders | Out-File -Append -FilePath checksums.sha256
-
-    - name: Upload checksums.sha256
-      uses: actions/upload-artifact@v4
-      with:
-        name: 'checksums'
-        path: 'checksums.md'
         
   Release:
     runs-on: ubuntu-latest
@@ -143,12 +128,6 @@ jobs:
         uses: actions/download-artifact@v4.1.8
         with:
           name: Tools
-          path: release
-
-      - name: Download Build Artifact checksums
-        uses: actions/download-artifact@v4.1.8
-        with:
-          name: checksums
           path: release
 
       - name: Calculate checksums
