@@ -1,7 +1,7 @@
 param($path)
 
 echo $path
-rm $path/*.sha256
+rm $path/*.md
 $files = Get-ChildItem $path
 $hashes = [ordered]@{}
 $summary = "
