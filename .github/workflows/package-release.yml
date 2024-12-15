@@ -149,7 +149,7 @@ jobs:
           draft: true
           bodyFile: release/checksums.md
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit: ${{ github.GITHUB_REF }}
+          tag: ${{ github.ref_name }}
           allowUpdates: true
           omitBodyDuringUpdate: true
           omitNameDuringUpdate: true
