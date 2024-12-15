@@ -19,6 +19,7 @@ jobs:
       run: |
         cd m2022-01
         Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-91.zip
+        echo 'Successfully packaged "ClassIsland-91".'
 
     - name: Upload ClassIsland-91.zip
       uses: actions/upload-artifact@v4
@@ -30,6 +31,7 @@ jobs:
       run: |
         cd m2022-05
         Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-95.zip
+        echo 'Successfully packaged "ClassIsland-95".'
 
     - name: Upload ClassIsland-95.zip
       uses: actions/upload-artifact@v4
@@ -41,6 +43,7 @@ jobs:
       run: |
         cd m2022-06
         Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-96.zip
+        echo 'Successfully packaged "ClassIsland-96".'
 
     - name: Upload ClassIsland-96.zip
       uses: actions/upload-artifact@v4
@@ -52,6 +55,7 @@ jobs:
       run: |
         cd m2022-08
         Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-98.zip
+        echo 'Successfully packaged "ClassIsland-98".'
 
     - name: Upload ClassIsland-98.zip
       uses: actions/upload-artifact@v4
@@ -63,6 +67,7 @@ jobs:
       run: |
         cd m2023-05
         Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-85.zip
+        echo 'Successfully packaged "ClassIsland-85".'
 
     - name: Upload ClassIsland-85.zip
       uses: actions/upload-artifact@v4
@@ -74,6 +79,7 @@ jobs:
       run: |
         cd Tools
         Compress-Archive -Path * -DestinationPath ../Tools.zip
+        echo 'Successfully packaged "Tools".'
 
     - name: Upload Tools.zip
       uses: actions/upload-artifact@v4
@@ -134,8 +140,7 @@ jobs:
         run: pwsh .github/workflows/generate-sha256.ps1 release/
 
       - name: Print files from release dir
-        run: |
-          ls -lah release
+        run: ls -lah release
 
       - name: Create Release
         uses: ncipollo/release-action@v1
@@ -144,7 +149,7 @@ jobs:
           draft: true
           bodyFile: release/checksums.md
           token: ${{ secrets.GITHUB_TOKEN }}
-          name: ${{ github.event_name }}
+          commit: ${{ github.GITHUB_REF }}
           allowUpdates: true
           omitBodyDuringUpdate: true
           omitNameDuringUpdate: true
