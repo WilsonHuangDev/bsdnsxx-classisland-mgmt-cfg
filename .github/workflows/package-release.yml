@@ -137,11 +137,10 @@ jobs:
         run: |
           ls -lah release
 
-      - name: Create a Draft Release
-        uses: wangliang181230/github-action-ghr@master
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          GHR_PATH: release/
-          GHR_TITLE: ${{ github.ref_name }}
-          GHR_REPLACE: true
-          GHR_DRAFT: true
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: release/*.zip
+          draft: true
+          bodyFile: release/checksums.md
+          token: ${{ secrets.GITHUB_TOKEN }}

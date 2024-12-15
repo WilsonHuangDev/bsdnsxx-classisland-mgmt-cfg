@@ -1,7 +1,7 @@
 param($path)
 
 echo $path
-rm $path/*.md
+rm $path/*.sha-256
 $files = Get-ChildItem $path
 $hashes = [ordered]@{}
 $summary = "
@@ -17,7 +17,7 @@ foreach ($i in $files) {
     $hash = Get-FileHash $i -Algorithm SHA256
     $hashString = $hash.Hash
     $hashes.Add($name, $hashString)
-    Write-Output $hash.Hash > "${i}.sha256"
+    Write-Output $hash.Hash > "${i}.sha-256"
     $summary +=  "| $name | ``${hashString}`` |`n"
 }
 
@@ -34,4 +34,3 @@ Write-Host "----------" -ForegroundColor Gray
 #if (-not $GITHUB_ACTION -eq $null) {
 #    'MD5_SUMMARY=' + $summary.Replace("`n", "<<") | Out-File -FilePath $env:GITHUB_ENV -Append
 #}
-
