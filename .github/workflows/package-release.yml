@@ -144,3 +144,7 @@ jobs:
           draft: true
           bodyFile: release/checksums.md
           token: ${{ secrets.GITHUB_TOKEN }}
+          name: ${{ github.event_name }}
+          allowUpdates: true
+          omitBodyDuringUpdate: true
+          omitNameDuringUpdate: true
