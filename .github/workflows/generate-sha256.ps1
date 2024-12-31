@@ -5,6 +5,18 @@ rm $path/*.sha-256
 $files = Get-ChildItem $path
 $hashes = [ordered]@{}
 $summary = "
+新增功能与优化
+------
+- 
+
+Bug 修复
+------
+- 
+<br>
+
+**Full Changelog**: https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/compare/
+
+------
 > [!important]
 > 下载时请注意核对文件SHA-256是否正确。
 
