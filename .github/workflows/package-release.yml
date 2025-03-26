@@ -18,11 +18,12 @@ on:
         options: [Stable, Beta]
         default: 'Stable'
 
+env:
+  artifact_name: ClassIsland_${{ github.event.inputs.release_tag }}_${{ github.event.inputs.release_channel }}
+
 jobs:
   Package:
     runs-on: windows-latest
-    env:
-      artifact_name: ClassIsland_${{ github.event.inputs.release_tag }}_${{ github.event.inputs.release_channel }}
 
     steps:
     - name: Checkout repository
