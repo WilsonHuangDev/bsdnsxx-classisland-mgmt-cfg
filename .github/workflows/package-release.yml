@@ -2,10 +2,27 @@ name: Package and Release
 
 on:
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: '版本发布标签'
+        required: true
+        type: string
+      version:
+        description: '版本名称'
+        required: true
+        type: string
+      release_channel:
+        description: '版本发布通道'
+        required: true
+        type: choice
+        options: [Stable, Beta]
+        default: 'Stable'
 
 jobs:
   Package:
     runs-on: windows-latest
+    env:
+      artifact_name: ClassIsland_${{ github.event.inputs.release_tag }}_${{ github.event.inputs.release_channel }}
 
     steps:
     - name: Checkout repository
@@ -14,74 +31,74 @@ jobs:
     - name: Package m2022-01/ClassIsland folder
       run: |
         cd m2022-01
-        Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-91.zip
-        echo 'Successfully packaged "ClassIsland-91".'
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../${{ env.artifact_name }}_m2022-01.zip
+        echo 'Successfully packaged "${{ env.artifact_name }}_m2022-01".'
 
-    - name: Upload ClassIsland-91.zip
+    - name: Upload ClassIsland_m2022-01
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-91'
-        path: 'ClassIsland-91.zip'
+        name: '${{ env.artifact_name }}_m2022-01'
+        path: '${{ env.artifact_name }}_m2022-01.zip'
 
     - name: Package m2022-05/ClassIsland folder
       run: |
         cd m2022-05
-        Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-95.zip
-        echo 'Successfully packaged "ClassIsland-95".'
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../${{ env.artifact_name }}_m2022-05.zip
+        echo 'Successfully packaged "${{ env.artifact_name }}_m2022-05".'
 
-    - name: Upload ClassIsland-95.zip
+    - name: Upload ClassIsland_m2022-05
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-95'
-        path: 'ClassIsland-95.zip'
+        name: '${{ env.artifact_name }}_m2022-05'
+        path: '${{ env.artifact_name }}_m2022-05.zip'
 
     - name: Package m2022-06/ClassIsland folder
       run: |
         cd m2022-06
-        Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-96.zip
-        echo 'Successfully packaged "ClassIsland-96".'
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../${{ env.artifact_name }}_m2022-06.zip
+        echo 'Successfully packaged "${{ env.artifact_name }}_m2022-06".'
 
-    - name: Upload ClassIsland-96.zip
+    - name: Upload ClassIsland_m2022-06
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-96'
-        path: 'ClassIsland-96.zip'
+        name: '${{ env.artifact_name }}_m2022-06'
+        path: '${{ env.artifact_name }}_m2022-06.zip'
       
     - name: Package m2022-08/ClassIsland folder
       run: |
         cd m2022-08
-        Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-98.zip
-        echo 'Successfully packaged "ClassIsland-98".'
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../${{ env.artifact_name }}_m2022-08.zip
+        echo 'Successfully packaged "${{ env.artifact_name }}_m2022-08".'
 
-    - name: Upload ClassIsland-98.zip
+    - name: Upload ClassIsland_m2022-08
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-98'
-        path: 'ClassIsland-98.zip'
+        name: '${{ env.artifact_name }}_m2022-08'
+        path: '${{ env.artifact_name }}_m2022-08.zip'
 
     - name: Package m2023-05/ClassIsland folder
       run: |
         cd m2023-05
-        Compress-Archive -Path ./ClassIsland -DestinationPath ../ClassIsland-85.zip
-        echo 'Successfully packaged "ClassIsland-85".'
+        Compress-Archive -Path ./ClassIsland -DestinationPath ../${{ env.artifact_name }}_m2023-05.zip
+        echo 'Successfully packaged "${{ env.artifact_name }}_m2023-05".'
 
-    - name: Upload ClassIsland-85.zip
+    - name: Upload ClassIsland_m2023-05
       uses: actions/upload-artifact@v4
       with:
-        name: 'ClassIsland-85'
-        path: 'ClassIsland-85.zip'
+        name: '${{ env.artifact_name }}_m2023-05'
+        path: '${{ env.artifact_name }}_m2023-05.zip'
 
     - name: Package Tools folder
       run: |
         cd Tools
-        Compress-Archive -Path * -DestinationPath ../Tools.zip
-        echo 'Successfully packaged "Tools".'
+        Compress-Archive -Path * -DestinationPath ../${{ env.artifact_name }}_Tools.zip
+        echo 'Successfully packaged "${{ env.artifact_name }}_Tools".'
 
-    - name: Upload Tools.zip
+    - name: Upload ClassIsland_Tools
       uses: actions/upload-artifact@v4
       with:
-        name: 'Tools'
-        path: 'Tools.zip'
+        name: '${{ env.artifact_name }}_Tools'
+        path: '${{ env.artifact_name }}_Tools.zip'
         
   Release:
     runs-on: windows-latest
@@ -96,41 +113,41 @@ jobs:
       - name: Make release dir
         run: mkdir -p release
 
-      - name: Download Build Artifact ClassIsland-91
+      - name: Download Build Artifact ClassIsland_m2022-01
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ClassIsland-91
-          path: release
+          name: '${{ env.artifact_name }}_m2022-01'
+          path: 'release'
 
-      - name: Download Build Artifact ClassIsland-95
+      - name: Download Build Artifact ClassIsland_m2022-05
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ClassIsland-95
-          path: release
+          name: '${{ env.artifact_name }}_m2022-05'
+          path: 'release'
 
-      - name: Download Build Artifact ClassIsland-96
+      - name: Download Build Artifact ClassIsland_m2022-06
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ClassIsland-96
-          path: release
+          name: '${{ env.artifact_name }}_m2022-06'
+          path: 'release'
 
-      - name: Download Build Artifact ClassIsland-98
+      - name: Download Build Artifact ClassIsland_m2022-08
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ClassIsland-98
-          path: release
+          name: '${{ env.artifact_name }}_m2022-08'
+          path: 'release'
 
-      - name: Download Build Artifact ClassIsland-85
+      - name: Download Build Artifact ClassIsland_m2023-05
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ClassIsland-85
-          path: release
+          name: '${{ env.artifact_name }}_m2023-05'
+          path: 'release'
 
-      - name: Download Build Artifact Tools
+      - name: Download Build Artifact ClassIsland_Tools
         uses: actions/download-artifact@v4.1.8
         with:
-          name: Tools
-          path: release
+          name: '${{ env.artifact_name }}_Tools'
+          path: 'release'
 
       - name: Calculate checksums
         run: pwsh .github/workflows/generate-sha256.ps1 release/
@@ -140,12 +157,17 @@ jobs:
 
       - name: Create Release
         uses: ncipollo/release-action@v1
+        env:
+            IS_PRERELEASE: ${{ github.event.inputs.release_channel == 'Beta' }}
         with:
           artifacts: release/*.zip
           draft: true
           bodyFile: release/checksums.md
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.ref_name }}
+          tag: ${{ github.event_name != 'workflow_dispatch' && github.ref || github.event.inputs.release_tag }}
+          name: ${{ github.event.inputs.version }}-${{ github.event.inputs.release_channel }}
+          prerelease: ${{ env.IS_PRERELEASE }}
           allowUpdates: true
           omitBodyDuringUpdate: true
           omitNameDuringUpdate: true
+          omitPrereleaseDuringUpdate: true
