@@ -151,10 +151,9 @@ jobs:
           path: 'release'
 
       - name: Calculate checksums
-        run: pwsh .github/workflows/generate-sha256.ps1 release/
-
-      - name: Print files from release dir
-        run: ls release -Recurse -Force
+        run: |
+          ls release -Recurse -Force
+          pwsh .github/workflows/generate-sha256.ps1 release/
 
       - name: Create Release
         if: ${{ github.event.inputs.release_channel != 'Dev' }}
