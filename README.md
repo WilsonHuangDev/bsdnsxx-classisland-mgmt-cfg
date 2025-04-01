@@ -6,7 +6,7 @@
 
 集控管理员QQ号: 2068364343
 
-[![Release](https://img.shields.io/github/v/release/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg?style=flat-round&color=%233fb950&label=Release)](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/releases/latest)
+[![Release](https://img.shields.io/github/v/tag/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg?style=flat-round&color=%233fb950&label=Release)](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/releases/latest)
 
 </div>
 
@@ -14,10 +14,10 @@
 
 ## 提醒
 
-1. 若发现任何错误/过时信息，请通过[添加 `Issue`](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/issues/new) 使我知晓。当然，您也可以自行[创建 `Pull Request`](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/pulls) 修改。
-2. 欢迎添加内容/班级！请[创建 `Pull Request`](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/pulls) ，按照当前已有格式添加，我会在审核通过后合并至仓库。
-3. 对于 ClassIsland 软件本体的错误，应该[在 ClassIsland 仓库发起 `Issue`](https://github.com/ClassIsland/ClassIsland/issues)，而不是在本仓库发起 `Issue` 。
-4. 对于 ClassIsland 软件本体的使用方法，请参阅[ClassIsland 文档](https://docs.classisland.tech/)。
+1. 若发现任何错误/过时信息，请通过 [发起 Issue](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/issues/new/choose) 使我知晓。当然，您也可以自行 [创建 Pull Request](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/pulls) 修改。
+2. 欢迎添加内容/班级！请 [创建 Pull Request](https://github.com/WilsonHuangDev/bsdnsxx-classisland-mgmt-cfg/pulls) ，按照当前已有格式添加，我会在审核通过后合并至仓库。
+3. 对于 ClassIsland 软件本体的错误，应该 [在 ClassIsland 仓库发起 Issue](https://github.com/ClassIsland/ClassIsland/issues/new/choose) ，而不是在本仓库发起 Issue 。
+4. 对于 ClassIsland 软件本体的使用方法，请参阅 [ClassIsland 文档](https://docs.classisland.tech/) 。
 
 ## 仓库目录结构
 
