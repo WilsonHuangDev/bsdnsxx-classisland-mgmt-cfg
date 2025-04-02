@@ -2,23 +2,23 @@
     "ServerKind": 0,
     "OrganizationName": "北京师范大学南山附属学校",
     "ClassPlanSource": {
-        "Value": "http://192.168.4.151:30050/bsdnsxx-classisland-mgmt-cfg/main/{id}/classplans.json",
-        "Version": 2090313000
+        "Value": "http://192.168.4.151:30050/bsdnsxx-classisland-mgmt-cfg/{id}/classplans.json",
+        "Version": 2100402000
     },
     "TimeLayoutSource": {
-        "Value": "http://192.168.4.151:30050/bsdnsxx-classisland-mgmt-cfg/main/{id}/timelayouts.json",
-        "Version": 2090313000
+        "Value": "http://192.168.4.151:30050/bsdnsxx-classisland-mgmt-cfg/{id}/timelayouts.json",
+        "Version": 2100402000
     },
     "SubjectsSource": {
-        "Value": "http://192.168.4.151:30050/bsdnsxx-classisland-mgmt-cfg/main/subjects.json",
-        "Version": 2090313000
+        "Value": "http://192.168.4.151:30050/bsdnsxx-classisland-mgmt-cfg/subjects.json",
+        "Version": 2100402000
     },
     "DefaultSettingsSource": {
-        "Value": "http://192.168.4.151:30050/bsdnsxx-classisland-mgmt-cfg/main/settings.json",
-        "Version": 2090313000
+        "Value": "http://192.168.4.151:30050/bsdnsxx-classisland-mgmt-cfg/settings.json",
+        "Version": 2100402000
     },
     "PolicySource": {
-        "Value": "http://192.168.4.151:30050/bsdnsxx-classisland-mgmt-cfg/main/policy.json",
-        "Version": 2090313000
+        "Value": "http://192.168.4.151:30050/bsdnsxx-classisland-mgmt-cfg/policy.json",
+        "Version": 2100402000
     }
 }
